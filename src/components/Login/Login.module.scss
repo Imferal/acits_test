@@ -1,0 +1,53 @@
+@import "./../../scss/variables";
+
+.form {
+    border: 1px solid rgba($DARK, 0.4);
+    border-radius: 0.4rem;
+
+    padding: 1rem;
+
+    position: absolute;
+
+    top: 5rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    height: auto;
+    width: 20rem;
+
+    &__label {
+        color: $DARK;
+        font-size: 0.8rem;
+        line-height: 1.8rem;
+    }
+
+    &__input {
+        padding: 0.2rem 0.4rem;
+        width: 100%;
+    }
+
+    &__fieldset {
+        border: none;
+    }
+
+    &__title {
+        color: $PRIMARY;
+        font-weight: 700;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    &__button {
+        margin-top: 1.8rem;
+
+        width: 100%;
+    }
+
+    &__error {
+        color: $ERROR;
+        font-size: 0.8rem;
+
+        margin-top: 0.8rem;
+    }
+}

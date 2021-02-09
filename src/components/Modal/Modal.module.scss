@@ -1,0 +1,50 @@
+@import "./../../scss/variables";
+
+.modal {
+    &__overlay {
+        height: 100vh;
+        width: 100vw;
+
+        background-color: rgba(0, 0, 0, 0.4);
+
+        position: fixed;
+
+        top: 0;
+        left: 0;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        opacity: 0;
+        pointer-events: none;
+        transition: 0.5s;
+    }
+
+    &__body {
+        border: 1px solid $PRIMARY;
+        background-color: #fff;
+        padding: 2rem;
+
+        transform: scale(0.5);
+        transition: 0.4s all;
+
+        li {
+            padding: 1rem 0 0 1rem;
+        }
+
+        button {
+            margin-top: 2rem;
+            width: 100%;
+        }
+    }
+}
+
+.modal__overlay.modal__active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.modal__body.modal__active {
+    transform: scale(1);
+}

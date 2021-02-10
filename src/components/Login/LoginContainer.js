@@ -17,7 +17,6 @@ const mapStateToProps = state => {
     };
 };
 
-
 const mapDispatchToProps = dispatch => {
     return {
         setBearerToken: bearerToken => {
@@ -35,7 +34,6 @@ const mapDispatchToProps = dispatch => {
         removeErrorMessage: () => {
             dispatch(removeErrorMessage())
         },
-
     };
 };
 

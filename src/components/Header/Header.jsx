@@ -9,7 +9,6 @@ export default function Header(props) {
                 <div className={s.header__body}>
                     <nav>
                         <ul className={s.header__list}>
-
                             <li className={s.header__item}><NavLink to="/today" className={s.header__link}>Сегодня</NavLink></li>
                             <li className={s.header__item}><NavLink to="/animals" className={s.header__link}>Животные</NavLink></li>
                         </ul>

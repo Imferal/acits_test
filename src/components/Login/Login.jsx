@@ -7,6 +7,7 @@ const Login = (props) => {
 
     let loginText = React.createRef();
     let passwordText = React.createRef();
+
     // Текст ошибки для вывода на экран
     let errorMessage = props.errorMessage;
 

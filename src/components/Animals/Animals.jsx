@@ -3,7 +3,7 @@ import s from "./../Animals/Animals.module.scss";
 import { withRouter } from "react-router-dom";
 import Modal from "../Modal/Modal";
 import { getServerData } from "../../api/api";
-import { findAnimalAttr } from "../../helpers/helpers";
+import { birthDateToAge, findAnimalAttr } from "../../helpers/helpers";
 import { DetailsButton } from "../_shared/DetailsButton";
 
 class Animals extends React.Component {
@@ -23,6 +23,7 @@ class Animals extends React.Component {
         let height = findAnimalAttr(e.animal_attributes, 'height')
         let weight = findAnimalAttr(e.animal_attributes, 'weight')
 
+        let age = birthDateToAge(e.birth_date)
 
         this.setState({
             modalIsOpen: true,
@@ -31,7 +32,7 @@ class Animals extends React.Component {
             spec_name: e.spec_name,
             height: height,
             weight: weight,
-            age: e.birth_date,
+            age: age,
         });
     }
 
@@ -85,6 +86,7 @@ class Animals extends React.Component {
                     subtype={this.state.spec_name}
                     height={this.state.height}
                     weight={this.state.weight}
+                    age={this.state.age}
                     closeModal={this.closeModal}
                     openModal={this.openModal}
                     modalIsOpen={this.state.modalIsOpen}

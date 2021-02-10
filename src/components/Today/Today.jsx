@@ -19,7 +19,6 @@ class Today extends React.Component {
     }
 
     openModal(e) {
-        debugger
         this.setState({
             modalIsOpen: true,
             name: e.animal.name,

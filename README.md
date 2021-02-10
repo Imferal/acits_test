@@ -38,12 +38,12 @@
 
 **Окно авторизации**
 
-![alt text](public/img/screen2.png "Описание будет тут")​
+![alt text](public/img/screen2.png "Окно авторизации")​
 
 **Страница "Сегодня"**
 
-![alt text](public/img/screen3.png "Описание будет тут")​
+![alt text](public/img/screen3.png "Страница "Сегодня"")​
 
 **Страница "Животные" и модальное окно**
 
-![alt text](public/img/screen1.png "Описание будет тут")​
+![alt text](public/img/screen1.png "Страница "Животные" и модальное окно")​

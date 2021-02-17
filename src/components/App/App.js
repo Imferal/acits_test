@@ -8,11 +8,11 @@ import Auth from '../Auth/Auth';
 const App = () => {
   return (
     <BrowserRouter basename="/acits">
-      <Header />
-      <Route exact path="/" component={Auth} />
-      <Route exact path="/animals" component={AnimalsContainer} />
-      <Route exact path="/today" component={TodayContainer} />
-      <Route path="/login" component={LoginContainer} />
+      <Header/>
+      <Route exact path="/" component={Auth}/>
+      <Route exact path="/animals" component={AnimalsContainer}/>
+      <Route exact path="/today" component={TodayContainer}/>
+      <Route path="/login" component={LoginContainer}/>
     </BrowserRouter>
   );
 };

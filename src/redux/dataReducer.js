@@ -14,17 +14,17 @@ export default function dataReducer(state = initialState, action) {
     // Данные о питомцах получены, перемещаем их в стейт
     case SAVE_ANIMALS_DATA: {
       state.results.animals = action.animalsData.slice(0);
-      return { ...state };
+      return {...state};
     }
 
     // Данные о назначениях на сегодня получены, перемещаем их в стейт
     case SAVE_TODAY_DATA: {
       state.results.today = action.todayData.slice(0);
-      return { ...state };
+      return {...state};
     }
 
     default:
-      return { ...state };
+      return {...state};
   }
 }
 

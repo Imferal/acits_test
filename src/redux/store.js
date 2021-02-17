@@ -1,11 +1,10 @@
-
-import { combineReducers, createStore } from 'redux';
+import {combineReducers, createStore} from 'redux';
 import apiReducer from './apiReducer';
 import dataReducer from './dataReducer';
 
 let reducers = combineReducers({
-    api: apiReducer,
-    data: dataReducer,
+  api: apiReducer,
+  data: dataReducer,
 });
 
 let store = createStore(reducers);

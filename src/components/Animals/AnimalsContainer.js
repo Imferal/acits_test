@@ -1,24 +1,24 @@
-import { connect } from "react-redux";
+import {connect} from "react-redux";
 import Animals from "./Animals";
-import { saveAnimalsData } from "../../redux/dataReducer";
+import {saveAnimalsData} from "../../redux/dataReducer";
 
 const mapStateToProps = state => {
-    return {
-        results: state.data.results.animals,
-        error: state.api.error,
-    };
+  return {
+    results: state.data.results.animals,
+    error: state.api.error,
+  };
 };
 
 const mapDispatchToProps = dispatch => {
-    return {
-        saveAnimalsData: (animalsData) => {
-            dispatch(saveAnimalsData(animalsData))
-        },
-    };
+  return {
+    saveAnimalsData: (animalsData) => {
+      dispatch(saveAnimalsData(animalsData))
+    },
+  };
 };
 
 const AnimalsContainer = connect(mapStateToProps, mapDispatchToProps)(
-    Animals
+  Animals
 );
 
 export default AnimalsContainer;

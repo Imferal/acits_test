@@ -2,14 +2,12 @@
 
 .header {
   background-color: $PRIMARY;
-
   width: 100%;
 
   &__body {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-
     height: 3rem;
   }
 
@@ -23,7 +21,6 @@
 
   &__link {
     color: #fff;
-
     font-size: 0.8rem;
     text-decoration: none;
     text-transform: uppercase;

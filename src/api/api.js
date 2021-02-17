@@ -4,8 +4,8 @@ import axios from 'axios';
 export const getServerData = type => {
   let token = localStorage.getItem('bearerToken');
   let getAnimalsUrl = type === 'today'
-    ? 'https://cors-anywhere.herokuapp.com/https://acits-api.herokuapp.com/api/v1/prescriptions/today/'
-    : 'https://cors-anywhere.herokuapp.com/https://acits-api.herokuapp.com/api/v1/animals/';
+    ? 'https://acits-api.herokuapp.com/api/v1/prescriptions/today/'
+    : 'https://acits-api.herokuapp.com/api/v1/animals/';
 
   return axios
     .get(getAnimalsUrl, {
@@ -20,7 +20,7 @@ export const getServerData = type => {
 // Авторизация
 export const getToken = (login, password) => {
   return axios
-    .post('https://cors-anywhere.herokuapp.com/https://acits-api.herokuapp.com/api/token/', {
+    .post('https://acits-api.herokuapp.com/api/token/', {
       headers: {
         'Content-Type': 'application/json',
       },

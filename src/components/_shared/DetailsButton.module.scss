@@ -1,22 +1,18 @@
 @import "./../../scss/variables";
 
 .detailsButton {
-    background-color: #fff;
-    color: $PRIMARY;
-    border: 1px solid $PRIMARY;
+  background-color: #fff;
+  color: $PRIMARY;
+  border: 1px solid $PRIMARY;
+  float: right;
+  height: 2.5rem;
+  width: 9.375rem;
+  font-weight: 400;
+  text-transform: none;
 
-    float: right;
-    height: 2.5rem;
-    width: 9.375rem;
-
-    font-weight: 400;
-
-    text-transform: none;
-
-    &:hover {
-        background-color: $PRIMARY;
-        border: none;
-
-        color: #fff;
-    }
+  &:hover {
+    background-color: $PRIMARY;
+    border: none;
+    color: #fff;
+  }
 }
